@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Пакеты</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <!-- Bootstrap CSS (jsDelivr CDN) -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"
+  >
+  <!-- Bootstrap Bundle JS (jsDelivr CDN) -->
+  <script
+    defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"
+  ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="text-center">
+  <a href="index.html"><img class="logo_img" src="img/logo.png" /></a>
+</div>
+<div class="text-center">
+  <ul class="text-center">
+    <a href="sachet.html">
+      <li>Пакет<br> "саше"</li>
+    </a>
+    <li class="active_menu">Трехшовный <br>пакет</li>
+    <li>С центральным <br>плавником</li>
+    <li>С центральным плавником и боковыми гранями</li>
+    <li>
+      Пакет типа <br> Дой-пак
+      <ul>
+        <li>С круглым дном</li>
+        <li>С К-образным дном</li>
+      </ul>
+    </li>
+    <li>С боковыми гранями (стабило)</li>
+    <li>С боковыми гранями и плоским дном</li>
+  </ul>
+</div>
+<div class="d-flex justify-content-center pt-5">
+  <div class="p-5 bg-white container__options">
+    <div class="pb-1"><b>ОПЦИИ:</b></div>
+    <div class="form-check">
+      <input
+        class="form-check-input" type="radio" name="exampleRadios" id="chk-box10" value="option2"
+        onchange="toggleImages();"
+      >
+      <label class="form-check-label" for="exampleRadios2">
+        Без опций
+      </label>
+    </div>
+    <div class="form-check">
+      <input
+        class="form-check-input" type="radio" name="exampleRadios" id="chk-box1" value="option2"
+        onchange="toggleImages();"
+      >
+      <label class="form-check-label" for="exampleRadios2">
+        Еврослот
+      </label>
+    </div>
+    <div class="form-check">
+      <input
+        class="form-check-input" type="radio" name="exampleRadios" id="chk-box5" value="option3"
+        onchange="toggleImages();"
+      >
+      <label class="form-check-label" for="exampleRadios2">
+        Насечка
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option4">
+      <label class="form-check-label" for="exampleRadios2">
+        Ручка
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option5">
+      <label class="form-check-label" for="exampleRadios2">
+        Закругление
+      </label>
+    </div>
+
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option6">
+        <label class="form-check-label" for="exampleRadios2">
+          Зип-застежка
+        </label>
+      </div>
+
+
+  </div>
+  <div class="text-center bg-white container__cards pb-4">
+    <div class="cards">
+      <img alt="1" id="1" src="./img/packages/three_seam/three_seam_0.jpg" title="1" />
+    </div>
+    <div  class="text-center">
+      <input class="check-dop" id="chk-box2" type="checkbox" onchange="toggleImages();"> ВНИЗУ</input>
+    </div>
+  </div>
+</div>
+
+<script>
+
+
+var shown = 1
+
+function toggleImages () {
+  if (document.getElementById('chk-box10').checked) {
+    showImage(1)
+  }
+}
+
+function showImage (n) {
+  console.log(document.getElementById(n))
+  document.getElementById(shown).style.display = 'none'
+  document.getElementById(n).style.display = 'block'
+  shown = n
+
+}
+</script>
+
+
+</body>
+</html>

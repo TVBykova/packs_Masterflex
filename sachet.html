@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Пакеты</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <!-- Bootstrap CSS (jsDelivr CDN) -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"
+  >
+  <!-- Bootstrap Bundle JS (jsDelivr CDN) -->
+  <script
+    defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"
+  ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="text-center">
+  <a href="index.html"><img class="logo_img" src="img/logo.png" /></a>
+</div>
+<div class="text-center">
+  <ul class="text-center">
+    <a href="sachet.html">
+      <li class="active_menu">Пакет<br> "саше"</li>
+    </a>
+    <a href="three_seam.html">
+      <li>Трехшовный <br>пакет</li>
+    </a>
+    <li>С центральным <br>плавником</li>
+    <li>С центральным плавником и боковыми гранями</li>
+    <li>
+      Пакет типа <br> Дой-пак
+      <ul>
+        <li>С круглым дном</li>
+        <li>С К-образным дном</li>
+      </ul>
+    </li>
+    <li>С боковыми гранями (стабило)</li>
+    <li>С боковыми гранями и плоским дном</li>
+  </ul>
+</div>
+<div class="d-flex justify-content-center pt-5">
+  <div class="p-5 bg-white container__options">
+    <div class="pb-1"><b>ОПЦИИ:</b></div>
+    <div class="form-check">
+      <input
+        class="form-check-input" type="radio" name="exampleRadios" id="sachet_bez" value="option1"
+        onchange="toggleImages();"
+      >
+      <label class="form-check-label" for="sachet_bez">
+        Без опций
+      </label>
+    </div>
+    <div class="form-check">
+      <input
+        class="form-check-input" type="radio" name="exampleRadios" id="sachet_evroV" value="option2"
+        onchange="toggleImages();"
+      >
+      <label class="form-check-label" for="sachet_evroV">
+        Еврослот
+      </label>
+    </div>
+    <div class="form-check">
+      <input
+        class="form-check-input" type="radio" name="exampleRadios" id="sachet_nasV" value="option3"
+        onchange="toggleImages();"
+      >
+      <label class="form-check-label" for="sachet_nasV">
+        Насечка
+      </label>
+    </div>
+    <div class="form-check">
+      <input
+        class="form-check-input" type="radio" name="exampleRadios" id="sachet_r9020V" value="option4"
+        onchange="toggleImages();"
+      >
+      <label class="form-check-label" for="sachet_r9020V">
+        Ручка 90х20
+      </label>
+    </div>
+    <div class="form-check">
+      <input
+        class="form-check-input" type="radio" name="exampleRadios" id="sachet_r5818V" value="option5"
+        onchange="toggleImages();"
+      >
+      <label class="form-check-label" for="sachet_r5818V">
+        Ручка 58х18
+      </label>
+    </div>
+    <div class="form-check">
+      <input
+        class="form-check-input" type="radio" name="exampleRadios" id="sachet_r3V" value="option6"
+        onchange="toggleImages();"
+      >
+      <label class="form-check-label" for="sachet_r3V">
+        Ручка "три пальца"
+      </label>
+    </div>
+    <div class="form-check">
+      <input
+        class="form-check-input" type="radio" name="exampleRadios" id="sachet_cir" value="option7"
+        onchange="toggleImages();"
+      >
+      <label class="form-check-label" for="sachet_cir">
+        Закругление
+      </label>
+    </div>
+
+    <div class="form-check">
+      <input
+        class="form-check-input" type="radio" name="exampleRadios" id="sachet_zipV" value="option8"
+        onchange="toggleImages();"
+      >
+      <label class="form-check-label" for="sachet_zipV">
+        Зип-застежка
+      </label>
+    </div>
+    <!--    <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option7" disabled>
+          <label class="form-check-label" for="exampleRadios3">
+            Ручка
+          </label>
+        </div>-->
+
+
+  </div>
+  <div class="text-center bg-white container__cards pb-4">
+    <div class="cards">
+      <img alt="bez_options" id="1" src="./img/packages/sachet/sachet_0.jpg" title="bez_options" />
+      <img alt="evroV" id="2" src="./img/packages/sachet/sachet_evroV.jpg" title="evroV" class="hide" />
+      <img
+        alt="3" id="3" src="https://master-h9zacwfui-master-f.vercel.app/images/icons/06.svg" title="3" class="hide"
+      />
+      <img
+        alt="evroN" id="4" src="./img/packages/sachet/sachet_evroN.jpg" title="evroN" class="hide"
+      />
+      <img alt="nasV" id="5" src="./img/packages/sachet/sachet_nasV.jpg" title="nasV" class="hide" />
+      <img alt="nasN" id="6" src="./img/packages/sachet/sachet_nasN.jpg" title="nasN" class="hide" />
+      <img alt="r9020V" id="7" src="./img/packages/sachet/sachet_r9020V.jpg" title="r9020V" class="hide" />
+      <img alt="r9020N" id="8" src="./img/packages/sachet/sachet_r9020N.jpg" title="r9020N" class="hide" />
+      <img alt="r5818V" id="9" src="./img/packages/sachet/sachet_r5818V.jpg" title="r5818V" class="hide" />
+      <img alt="r5818N" id="10" src="./img/packages/sachet/sachet_r5818N.jpg" title="r5818N" class="hide" />
+      <img alt="r3V" id="11" src="./img/packages/sachet/sachet_r3V.jpg" title="r3V" class="hide" />
+      <img alt="r3N" id="12" src="./img/packages/sachet/sachet_r3N.jpg" title="r3N" class="hide" />
+      <img alt="cir" id="13" src="./img/packages/sachet/sachet_cir.jpg" title="cir" class="hide" />
+      <img alt="cir" id="14" src="./img/packages/sachet/sachet_zipV.jpg" title="cir" class="hide" />
+      <img alt="zipV" id="15" src="./img/packages/sachet/sachet_zipN.jpg" title="zipV" class="hide" />
+    </div>
+    <div class="text-center">
+      <input class="check-dop" id="niz" type="checkbox" onchange="toggleImages();"> ВНИЗУ</input>
+    </div>
+  </div>
+</div>
+
+<script>
+
+
+var shown = 1
+
+function toggleImages () {
+  if (document.getElementById('sachet_evroV').checked) {
+    if (document.getElementById('niz').checked) {
+      showImage(4)
+    } else {
+      showImage(2)
+    }
+  }
+  if (document.getElementById('sachet_bez').checked) {
+    showImage(1)
+  }
+  if (document.getElementById('sachet_nasV').checked) {
+    if (document.getElementById('niz').checked) {
+      showImage(6)
+    } else {
+      showImage(5)
+    }
+  }
+  if (document.getElementById('sachet_r9020V').checked) {
+    if (document.getElementById('niz').checked) {
+      showImage(8)
+    } else {
+      showImage(7)
+    }
+  }
+  if (document.getElementById('sachet_r5818V').checked) {
+    if (document.getElementById('niz').checked) {
+      showImage(10)
+    } else {
+      showImage(9)
+    }
+  }
+  if (document.getElementById('sachet_r3V').checked) {
+    if (document.getElementById('niz').checked) {
+      showImage(12)
+    } else {
+      showImage(11)
+    }
+  }
+  if (document.getElementById('sachet_cir').checked) {
+    showImage(13)
+  }
+  if (document.getElementById('sachet_zipV').checked) {
+    if (document.getElementById('niz').checked) {
+      showImage(15)
+    } else {
+      showImage(14)
+    }
+  }
+}
+
+function showImage (n) {
+  console.log(document.getElementById(n))
+  document.getElementById(shown).style.display = 'none'
+  document.getElementById(n).style.display = 'block'
+  shown = n
+
+}
+</script>
+
+
+</body>
+</html>
