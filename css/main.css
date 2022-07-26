@@ -89,6 +89,10 @@ a {
     width: 300px;
 }
 
+.card_razvertka img {
+    width: 400px;
+}
+
 .hide {
     display:none;
     animation: ani 1.5s forwards;
