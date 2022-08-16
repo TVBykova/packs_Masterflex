@@ -67,7 +67,9 @@ ul li:hover ul {
     opacity: 1;
     visibility: visible;
 }
-
+ul a {
+    text-decoration: none;
+}
 .logo_img {
     max-width: 250px;
 }
@@ -122,6 +124,10 @@ a {
 
 .click_pack {
     font-size: 28px;
+}
+
+.form-check-block {
+    padding-right: 36px;
 }
 
 

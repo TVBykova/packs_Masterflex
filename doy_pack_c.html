@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Пакеты</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Bootstrap CSS (jsDelivr CDN) -->
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"
+    >
+    <!-- Bootstrap Bundle JS (jsDelivr CDN) -->
+    <script
+            defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="text-center">
+    <a href="index.html"><img class="logo_img" src="img/logo.png"/></a>
+</div>
+<div class="text-center">
+    <ul class="text-center">
+        <a href="sachet.html">
+            <li>Пакет<br> "саше"</li>
+        </a>
+        <a href="three_seam.html">
+            <li>Трехшовный <br>пакет</li>
+        </a>
+        <a href="central_fin.html">
+        <li>С центральным <br>плавником</li>
+        </a>
+        <a href="central_fin_side_faces.html">
+        <li>С центральным плавником и боковыми гранями</li>
+        </a>
+        <li class="active_menu">
+            Пакет типа <br> Дой-пак
+            <ul>
+                <a href="doy_pack_c.html">
+                <li>С круглым дном</li>
+                </a>
+              <a href="doy_pack_k.html">
+                <li>С К-образным дном</li>
+              </a>
+            </ul>
+        </li>
+        <li>С боковыми гранями (стабило)</li>
+        <li>С боковыми гранями и плоским дном</li>
+    </ul>
+</div>
+<div class="d-flex justify-content-center pt-5">
+    <div class="p-5 bg-white container__options">
+        <div class="pb-1"><b>ОПЦИИ (c круглым дном):</b></div>
+        <div class="form-check">
+            <input
+                    class="form-check-input" type="checkbox" name="exampleRadios" id="doy_pack_evroV" value="option2"
+                    onchange="toggleImages();"
+            >
+            <label class="form-check-label" for="doy_pack_evroV">
+                Еврослот
+            </label>
+        </div>
+        <div class="form-check">
+            <input
+                    class="form-check-input" type="checkbox" name="exampleRadios" id="doy_pack_nasV" value="option3"
+                    onchange="toggleImages();"
+            >
+            <label class="form-check-label" for="doy_pack_nasV">
+                Насечка
+            </label>
+        </div>
+        <div class="form-check">
+            <input
+                    class="form-check-input" type="checkbox" name="exampleRadios" id="doy_pack_r9020V" value="option4"
+                    onchange="toggleImages();"
+            >
+            <label class="form-check-label" for="doy_pack_r9020V">
+                Ручка 90х20
+            </label>
+        </div>
+        <div class="form-check">
+            <input
+                    class="form-check-input" type="checkbox" name="exampleRadios" id="doy_pack_r5818V" value="option5"
+                    onchange="toggleImages();"
+            >
+            <label class="form-check-label" for="doy_pack_r5818V">
+                Ручка 58х18
+            </label>
+        </div>
+        <div class="form-check">
+            <input
+                    class="form-check-input" type="checkbox" name="exampleRadios" id="doy_pack_r3V" value="option6"
+                    onchange="toggleImages();"
+            >
+            <label class="form-check-label" for="doy_pack_r3V">
+                Ручка "три пальца"
+            </label>
+        </div>
+        <div class="form-check">
+            <input
+                    class="form-check-input" type="checkbox" name="exampleRadios" id="doy_pack_cir" value="option7"
+                    onchange="toggleImages();"
+            >
+            <label class="form-check-label" for="doy_pack_cir">
+                Закругление
+            </label>
+        </div>
+
+        <div class="form-check">
+            <input
+                    class="form-check-input" type="checkbox" name="exampleRadios" id="doy_pack_zipV" value="option8"
+                    onchange="toggleImages();"
+            >
+            <label class="form-check-label" for="doy_pack_zipV">
+                Зип-застежка
+            </label>
+        </div>
+        <div>
+        <a href="doy_pack_razvertka.html"><button type="button" class="btn btn-outline-success mt-2 w-100">Развертка</button></a>
+        </div>
+    </div>
+    <div class="text-center bg-white container__cards pb-4">
+        <div class="cards">
+            <img alt="bez_options" id="1" src="./img/packages/doy_pack/doy_pack_0.jpg" title="bez_options"/>
+            <img alt="evroV" id="2" src="./img/packages/doy_pack/doy_pack_evroV.jpg" title="evroV" class="hide"/>
+            <img alt="nasV" id="5" src="./img/packages/doy_pack/doy_pack_nasV.jpg" title="nasV" class="hide"/>
+            <img alt="r9020V" id="7" src="./img/packages/doy_pack/doy_pack_r9020V.jpg" title="r9020V" class="hide"/>
+            <img alt="r5818V" id="9" src="./img/packages/doy_pack/doy_pack_r5818V.jpg" title="r5818V" class="hide"/>
+            <img alt="r3V" id="11" src="./img/packages/doy_pack/doy_pack_r3V.jpg" title="r3V" class="hide"/>
+            <img alt="cir" id="13" src="./img/packages/doy_pack/doy_pack_cir.jpg" title="cir" class="hide"/>
+            <img alt="cir" id="14" src="./img/packages/doy_pack/doy_pack_zipV.jpg" title="cir" class="hide"/>
+            <img alt="zasV" id="16" src="./img/packages/doy_pack/doy_pack_evro-zasV.jpg" title="zasV" class="hide"/>
+            <img alt="nasR9020V" id="18" src="./img/packages/doy_pack/doy_pack_nasR9020V.jpg" title="nasR9020V"
+                 class="hide"/>
+            <img alt="nasR5818V" id="20" src="./img/packages/doy_pack/doy_pack_nasR5818V.jpg" title="nasR5818V"
+                 class="hide"/>
+            <img alt="nasr3V" id="22" src="./img/packages/doy_pack/doy_pack_nasr3V.jpg" title="nasr3V" class="hide"/>
+            <img alt="nas_cirV" id="24" src="./img/packages/doy_pack/doy_pack-nas_cirV.jpg" title="nas_cirV" class="hide"/>
+            <img alt="nas_zipV" id="26" src="./img/packages/doy_pack/doy_pack-nas_zipV.jpg" title="nas_zipV" class="hide"/>
+            <img alt="evro_cirV" id="28" src="./img/packages/doy_pack/doy_pack-evro_cirV.jpg" title="evro_cirV"
+                 class="hide"/>
+            <img alt="evro_zipV" id="30" src="./img/packages/doy_pack/doy_pack-evro_zipV.jpg" title="evro_zipV"
+                 class="hide"/>
+            <img
+                    alt="evro-nas_cirV" id="32" src="./img/packages/doy_pack/doy_pack_evro-nas_cirV.jpg"
+                    title="evro-nas_cirV"
+                    class="hide"
+            />
+            <img
+                    alt="evro-nas_zipV" id="34" src="./img/packages/doy_pack/doy_pack_evro-nas_zipV.jpg"
+                    title="evro-nas_zipV"
+                    class="hide"
+            />
+            <img alt="evro-nas_cir_zipV" id="36" src="./img/packages/doy_pack/doy_pack_evro-nas_cir_zipV.jpg"
+                 title="evro-nas_cir_zipV" class="hide"/>
+            <img alt="evro-cir_zipV" id="38" src="./img/packages/doy_pack/doy_pack_evro-cir_zipV.jpg" title="evro-cir_zipV"
+                 class="hide"/>
+            <img alt="nas_cir_zipV" id="40" src="./img/packages/doy_pack/doy_pack_nas_cir_zipV.jpg" title="nas_cir_zipV"
+                 class="hide"/>
+            <img alt="cir_zipV" id="42" src="./img/packages/doy_pack/doy_pack_cir_zipV.jpg" title="cir_zipV"
+                 class="hide"/>
+            <img alt="r9020_cirV" id="44" src="./img/packages/doy_pack/doy_pack_r9020_cirV.jpg" title="r9020_cirV" class="hide"/>
+            <img alt="r5818_cirV" id="46" src="./img/packages/doy_pack/doy_pack_r5818_cirV.jpg" title="r5818_cirV" class="hide"/>
+            <img alt="r3_cirV" id="48" src="./img/packages/doy_pack/doy_pack_r3_cirV.jpg" title="r3_cirV" class="hide"/>
+            <img alt="r9020_zipV" id="50" src="./img/packages/doy_pack/doy_pack_r9020_zipV.jpg" title="r9020_zipV" class="hide"/>
+            <img alt="r5818_zipV" id="52" src="./img/packages/doy_pack/doy_pack_r5818_zipV.jpg" title="r5818_zipV" class="hide"/>
+            <img alt="r3_zipV" id="54" src="./img/packages/doy_pack/doy_pack_r3_zipV.jpg" title="r3_zipV" class="hide"/>
+            <img alt="nasR9020_cirV" id="56" src="./img/packages/doy_pack/doy_pack_nasR9020_cirV.jpg" title="rnasR9020_cirV" class="hide"/>
+            <img alt="nasR5818_cirV" id="58" src="./img/packages/doy_pack/doy_pack_nasR5818_cirV.jpg" title="nasR5818_cirV" class="hide"/>
+            <img alt="nasr3_cirV" id="60" src="./img/packages/doy_pack/doy_pack_nasr3_cirV.jpg" title="nasr3_cirV" class="hide"/>
+            <img alt="nasR9020_zipV" id="62" src="./img/packages/doy_pack/doy_pack_nasR9020_zipV.jpg" title="nasR9020_zipV" class="hide"/>
+            <img alt="nasR5818_zipV" id="64" src="./img/packages/doy_pack/doy_pack_nasR5818_zipV.jpg" title="nasR5818_zipV" class="hide"/>
+            <img alt="nasr3_zipV" id="66" src="./img/packages/doy_pack/doy_pack_nasr3_zipV.jpg" title="nasr3_zipV" class="hide"/>
+            <img alt="nasR9020_cir_zipV" id="68" src="./img/packages/doy_pack/doy_pack_nasR9020_cir_zipV.jpg" title="nasR9020_cir_zipV" class="hide"/>
+            <img alt="nasR5818_cir_zipV" id="70" src="./img/packages/doy_pack/doy_pack_nasR5818_cir_zipV.jpg" title="nasR5818_cir_zipV" class="hide"/>
+            <img alt="nasr3_cir_zipV" id="72" src="./img/packages/doy_pack/doy_pack_nasr3_cir_zipV.jpg" title="nasr3_cir_zipV" class="hide"/>
+            <img alt="R9020_cir_zipV" id="74" src="./img/packages/doy_pack/doy_pack_R9020_cir_zipV.jpg" title="R9020_cir_zipV" class="hide"/>
+            <img alt="r5818_cir_zipV" id="76" src="./img/packages/doy_pack/doy_pack_r5818_cir_zipV.jpg" title="r5818_cir_zipV" class="hide"/>
+            <img alt="_cir_zipV" id="78" src="./img/packages/doy_pack/doy_pack_r3_cir_zipV.jpg" title="_cir_zipV" class="hide"/>
+        </div>
+    </div>
+</div>
+
+<script>
+
+
+    var shown = 1;
+
+    function toggleImages() {
+        let c1 = document.getElementById('doy_pack_evroV');
+        let c2 = document.getElementById('doy_pack_nasV');
+        let c3 = document.getElementById('doy_pack_r9020V');
+        let c4 = document.getElementById('doy_pack_r5818V');
+        let c5 = document.getElementById('doy_pack_r3V');
+        let c6 = document.getElementById('doy_pack_cir');
+        let c7 = document.getElementById('doy_pack_zipV');
+
+        if (document.getElementById('doy_pack_evroV').checked) {
+                showImage(2);
+                c3.disabled = true;
+                c4.disabled = true;
+                c5.disabled = true;
+            }
+         else {
+            showImage(1);
+            c3.disabled = false;
+            c4.disabled = false;
+            c5.disabled = false;
+        }
+
+        if (document.getElementById('doy_pack_nasV').checked) {
+                showImage(5);
+                c3.disabled = false;
+                c4.disabled = false;
+                c5.disabled = false
+            }
+
+        if (c1.checked && c2.checked) {
+            showImage(16);
+            c3.disabled = true;
+            c4.disabled = true;
+            c5.disabled = true
+
+        }
+
+        if (document.getElementById('doy_pack_r9020V').checked) {
+            showImage(7);
+            c1.disabled = true;
+            c4.disabled = true;
+            c5.disabled = true;
+        } else {
+            c1.disabled = false;
+        }
+
+        if (c2.checked && c3.checked) {
+            showImage(18);
+        }
+
+        if (document.getElementById('doy_pack_r5818V').checked) {
+            showImage(9);
+            c1.disabled = true;
+            c3.disabled = true;
+            c5.disabled = true
+
+            if (c2.checked && c4.checked) {
+                showImage(20);
+            }
+        }
+
+        if (document.getElementById('doy_pack_r3V').checked) {
+            showImage(11);
+            c1.disabled = true;
+            c3.disabled = true;
+            c4.disabled = true
+
+            if (c2.checked && c5.checked) {
+                showImage(22);
+            }
+        }
+
+        if (document.getElementById('doy_pack_cir').checked) {
+            showImage(13);
+
+            if (document.getElementById('doy_pack_nasV').checked) {
+                showImage(24)
+            }
+
+            if (document.getElementById('doy_pack_evroV').checked) {
+                showImage(28)
+            }
+            if (c3.checked && c6.checked) {
+                showImage(44);
+            }
+            if (c4.checked && c6.checked) {
+                showImage(46);
+            }
+            if (c5.checked && c6.checked) {
+                showImage(48);
+            }
+        }
+
+        if (document.getElementById('doy_pack_zipV').checked) {
+            showImage(14)
+
+            if (document.getElementById('doy_pack_nasV').checked) {
+                showImage(26)
+            }
+
+            if (document.getElementById('doy_pack_evroV').checked) {
+                showImage(30)
+            }
+          if (c3.checked && c7.checked) {
+            showImage(50);
+          }
+          if (c4.checked && c7.checked) {
+            showImage(52);
+          }
+          if (c5.checked && c7.checked) {
+            showImage(54);
+          }
+        }
+        if (c2.checked && c3.checked && c6.checked) {
+            showImage(56);
+        }
+        if (c2.checked && c4.checked && c6.checked) {
+            showImage(58);
+        }
+        if (c2.checked && c5.checked && c6.checked) {
+            showImage(60);
+        }
+        if (c6.checked && c7.checked) {
+            showImage(42);
+        }
+        if (c1.checked && c2.checked && c6.checked) {
+            showImage(32);
+        }
+        if (c1.checked && c2.checked && c7.checked) {
+            showImage(34);
+        }
+        if (c1.checked && c6.checked && c7.checked) {
+            showImage(38);
+        }
+        if (c2.checked && c6.checked && c7.checked) {
+            showImage(40);
+        }
+        if (c2.checked && c3.checked && c7.checked) {
+            showImage(62);
+        }
+        if (c2.checked && c4.checked && c7.checked) {
+            showImage(64);
+        }
+        if (c2.checked && c5.checked && c7.checked) {
+            showImage(66);
+        }
+        if (c3.checked && c6.checked && c7.checked) {
+            showImage(74);
+        }
+        if (c4.checked && c6.checked && c7.checked) {
+            showImage(76);
+        }
+        if (c5.checked && c6.checked && c7.checked) {
+            showImage(78);
+        }
+        if (c2.checked && c3.checked && c6.checked && c7.checked) {
+            showImage(68);
+        }
+        if (c2.checked && c4.checked && c6.checked && c7.checked) {
+            showImage(70);
+        }
+        if (c2.checked && c5.checked && c6.checked && c7.checked) {
+            showImage(72);
+        }
+        if (c1.checked && c2.checked && c6.checked && c7.checked) {
+            showImage(36);
+        }
+    }
+
+    function showImage(n) {
+        console.log(document.getElementById(n));
+        document.getElementById(shown).style.display = 'none';
+        document.getElementById(n).style.display = 'block';
+        shown = n
+
+    }
+</script>
+
+
+</body>
+</html>
