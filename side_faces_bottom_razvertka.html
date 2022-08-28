@@ -46,25 +46,33 @@
             </ul>
         </li>
         <a href="stabilo.html">
-        <li class="active_menu">С боковыми гранями (стабило)</li>
+        <li>С боковыми гранями (стабило)</li>
         </a>
         <a href="side_faces_bottom.html">
-        <li>С боковыми гранями и плоским дном</li>
+        <li class="active_menu">С боковыми гранями и плоским дном</li>
         </a>
     </ul>
 </div>
 <div class="d-flex justify-content-center pt-5">
     <div class="p-5 bg-white container__options">
         <div class="text-center">
-            <a href="stabilo.html"><button type="button" class="btn btn-outline-secondary mb-1 w-50">Назад</button></a>
+            <a href="side_faces_bottom.html"><button type="button" class="btn btn-outline-secondary mb-1 w-50">Назад</button></a>
         </div>
-        <div>
-            <img alt="razv" id="1" src="./img/razvertka/razv9.jpg" title="razv" height="300px"/>
-            <img alt="razv" id="2" src="./img/razvertka/razv10.jpg" title="razv" class="hide" height="300px"/>
+        <div class="card_razvertka">
+            <img alt="bez_options" id="1" src="./img/razvertka/razv11.jpg" title="bez_options"/>
+            <img alt="razv6" id="2" src="./img/razvertka/razv12.jpg" title="evroV" class="hide"/>
+            <img alt="razv7" id="3" src="./img/razvertka/razv13.jpg" title="evroV" class="hide"/>
+            <img alt="razv8" id="4" src="./img/razvertka/razv14.jpg" title="evroV" class="hide"/>
         </div>
         <div class="form-check d-flex justify-content-center">
-            <div>
-                <input class="form-check-input" id="niz" name="exampleRadios"  value="option2" type="checkbox" onchange="toggleImages();">🡅СНИЗУ</input>
+            <div class="form-check-block">
+                <input class="form-check-input" id="left" name="exampleRadios"  value="option2" type="checkbox" onchange="toggleImages();">→СЛЕВА</input>
+            </div>
+            <div class="form-check-block">
+                <input class="form-check-input" id="niz" name="exampleRadios"  value="option2" type="checkbox" onchange="toggleImages();">↑СНИЗУ</input>
+            </div>
+            <div class="form-check-block">
+                <input class="form-check-input" id="right" name="exampleRadios"  value="option2" type="checkbox" onchange="toggleImages();">←СПРАВА</input>
             </div>
         </div>
     </div>
@@ -75,18 +83,31 @@
 
 
 var shown = 1;
-
+let c1 = document.getElementById('niz');
+let c2 = document.getElementById('left');
+let c3 = document.getElementById('right');
 function toggleImages() {
 
+
     if (document.getElementById('niz').checked) {
-        if (document.getElementById('niz').checked) {
-            showImage(2);
-        } else {
-            showImage(2);
-        }
+        showImage(4);
+        c2.disabled = true;
+        c3.disabled = true;
     } else {
         showImage(1);
-
+        c1.disabled = false;
+        c2.disabled = false;
+        c3.disabled = false;
+    }
+    if (document.getElementById('left').checked) {
+        showImage(2);
+        c1.disabled = true;
+        c3.disabled = true;
+    }
+    if (document.getElementById('right').checked) {
+        showImage(3);
+        c1.disabled = true;
+        c2.disabled = true;
     }
 }
 
