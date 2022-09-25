@@ -1,103 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Пакеты</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <!-- Bootstrap CSS (jsDelivr CDN) -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"
-    >
-    <!-- Bootstrap Bundle JS (jsDelivr CDN) -->
-    <script
-      defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"
-    ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <title>Пакеты</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <!-- Bootstrap CSS (jsDelivr CDN) -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"
+  >
+  <!-- Bootstrap Bundle JS (jsDelivr CDN) -->
+  <script
+    defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"
+  ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 <div class="text-center">
-    <a href="index.html"><img class="logo_img" src="img/logo.png"/></a>
+  <a href="index.html"><img class="logo_img" src="img/logo.png" /></a>
 </div>
 <div class="text-center">
-    <ul class="text-center">
-        <a href="sachet.html">
-            <li>Пакет<br> "саше"</li>
+  <ul class="text-center">
+    <a href="sachet.html">
+      <li>Пакет<br> "саше"</li>
+    </a>
+    <a href="three_seam.html">
+      <li class="active_menu">Трехшовный <br>пакет</li>
+    </a>
+    <a href="central_fin.html">
+      <li>С центральным <br>плавником</li>
+    </a>
+    <a href="central_fin_side_faces.html">
+      <li>С центральным плавником и боковыми гранями</li>
+    </a>
+    <li>
+      Пакет типа <br> Дой-пак
+      <ul>
+        <a href="doy_pack_c.html">
+          <li>С круглым дном</li>
         </a>
-        <a href="three_seam.html">
-            <li class="active_menu">Трехшовный <br>пакет</li>
+        <a href="doy_pack_k.html">
+          <li>С К-образным дном</li>
         </a>
-        <a href="central_fin.html">
-        <li>С центральным <br>плавником</li>
-        </a>
-        <a href="central_fin_side_faces.html">
-        <li>С центральным плавником и боковыми гранями</li>
-        </a>
-        <li>
-            Пакет типа <br> Дой-пак
-            <ul>
-                <a href="doy_pack_c.html">
-                <li>С круглым дном</li>
-                </a>
-                <a href="doy_pack_k.html">
-                <li>С К-образным дном</li>
-                </a>
-            </ul>
-        </li>
-        <a href="stabilo.html">
-        <li>С боковыми гранями (стабило)</li>
-        </a>
-        <a href="side_faces_bottom.html">
-        <li>С боковыми гранями и плоским дном</li>
-        </a>
-    </ul>
+      </ul>
+    </li>
+    <a href="stabilo.html">
+      <li>С боковыми гранями (стабило)</li>
+    </a>
+    <a href="side_faces_bottom.html">
+      <li>С боковыми гранями и плоским дном</li>
+    </a>
+  </ul>
 </div>
 <div class="d-flex justify-content-center pt-5">
-    <div class="p-5 bg-white container__options">
-        <div class="text-center">
-            <a href="three_seam.html"><button type="button" class="btn btn-outline-secondary mb-1 w-50">Назад</button></a>
-        </div>
-        <div class="card_razvertka">
-            <img alt="bez_options" id="1" src="./img/razvertka/razv1.jpg" title="bez_options"/>
-            <img alt="evroV" id="2" src="./img/razvertka/razv2.jpg" title="evroV" class="hide"/>
-        </div>
-        <div class="form-check d-flex justify-content-center">
-            <div>
-                <input class="form-check-input" id="niz" name="exampleRadios"  value="option2" type="checkbox" onchange="toggleImages();">🡅СНИЗУ</input>
-            </div>
-        </div>
+  <div class="p-5 bg-white container__options">
+    <div class="text-center">
+      <a href="three_seam.html">
+        <button type="button" class="btn btn-outline-secondary mb-1 w-50">Назад</button>
+      </a>
     </div>
+    <div class="card_razvertka">
+      <img alt="bez_options" id="1" src="./img/razvertka/sashetThreeCentr/0.jpg" title="bez_options" />
+      <img alt="10" id="10" src="./img/razvertka/sashetThreeCentr/10.jpg" title="10" class="hide" />
+      <img alt="20" id="20" src="./img/razvertka/sashetThreeCentr/20.jpg" title="20" class="hide" />
+      <img alt="30" id="30" src="./img/razvertka/sashetThreeCentr/30.jpg" title="30" class="hide" />
+      <img alt="40" id="40" src="./img/razvertka/sashetThreeCentr/40.jpg" title="40" class="hide" />
+      <img alt="05" id="50" src="./img/razvertka/sashetThreeCentr/05.jpg" title="50" class="hide" />
+      <img alt="06" id="60" src="./img/razvertka/sashetThreeCentr/06.jpg" title="60" class="hide" />
+      <img alt="07" id="70" src="./img/razvertka/sashetThreeCentr/07.jpg" title="70" class="hide" />
+      <img alt="08" id="80" src="./img/razvertka/sashetThreeCentr/08.jpg" title="80" class="hide" />
+      <img alt="15" id="15" src="./img/razvertka/sashetThreeCentr/15.jpg" title="15" class="hide" />
+      <img alt="16" id="16" src="./img/razvertka/sashetThreeCentr/16.jpg" title="16" class="hide" />
+      <img alt="17" id="17" src="./img/razvertka/sashetThreeCentr/17.jpg" title="17" class="hide" />
+      <img alt="18" id="18" src="./img/razvertka/sashetThreeCentr/18.jpg" title="18" class="hide" />
+      <img alt="25" id="25" src="./img/razvertka/sashetThreeCentr/25.jpg" title="25" class="hide" />
+      <img alt="26" id="26" src="./img/razvertka/sashetThreeCentr/26.jpg" title="26" class="hide" />
+      <img alt="27" id="27" src="./img/razvertka/sashetThreeCentr/27.jpg" title="27" class="hide" />
+      <img alt="28" id="28" src="./img/razvertka/sashetThreeCentr/28.jpg" title="28" class="hide" />
+      <img alt="35" id="35" src="./img/razvertka/sashetThreeCentr/35.jpg" title="35" class="hide" />
+      <img alt="36" id="36" src="./img/razvertka/sashetThreeCentr/36.jpg" title="36" class="hide" />
+      <img alt="37" id="37" src="./img/razvertka/sashetThreeCentr/37.jpg" title="37" class="hide" />
+      <img alt="38" id="38" src="./img/razvertka/sashetThreeCentr/38.jpg" title="38" class="hide" />
+      <img alt="45" id="45" src="./img/razvertka/sashetThreeCentr/45.jpg" title="45" class="hide" />
+      <img alt="46" id="46" src="./img/razvertka/sashetThreeCentr/46.jpg" title="46" class="hide" />
+      <img alt="47" id="47" src="./img/razvertka/sashetThreeCentr/47.jpg" title="38" class="hide" />
+      <img alt="48" id="48" src="./img/razvertka/sashetThreeCentr/48.jpg" title="48" class="hide" />
+    </div>
+    <div class="text-center"><p><b>Направление текста:</b></p></div>
+    <div class="form-check d-flex justify-content-between">
+      <div>
+        <p class="text-center">Лицо</p>
+        <div class="d-flex pe-4 box-border">
+          <div class="me-5">
+            <div class="mb-4">
+              <input
+                class="form-check-input mt-3" id="licoL" name="exampleRadios" value="option2" type="checkbox"
+                onchange="toggleImages();"
+              >
+              <img src="./img/a.png" width="50px" class="rotate-90"></input>
+            </div>
 
+            <div class="mb-4">
+              <input
+                class="form-check-input mt-3" id="licoP" name="exampleRadios" value="option3" type="checkbox"
+                onchange="toggleImages();"
+              ><img src="./img/a.png" width="50px" class="rotate90"></input>
+            </div>
+          </div>
+          <div>
+            <div class="mb-4">
+              <input
+                class="form-check-input mt-3" id="licoN" name="exampleRadios" value="option4" type="checkbox"
+                onchange="toggleImages();"
+              ><img src="./img/a.png" width="50px" class="rotate180"></input>
+            </div>
+
+            <div class="mb-4">
+              <input
+                class="form-check-input mt-3" id="licoV" name="exampleRadios" value="option5" type="checkbox"
+                onchange="toggleImages();"
+              ><img src="./img/a.png" width="50px"></input>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="text-center">Оборот</p>
+        <div class="d-flex ">
+          <div class="me-5">
+            <div class="mb-4">
+              <input
+                class="form-check-input mt-3" id="licoOL" name="exampleRadios" value="option2" type="checkbox"
+                onchange="toggleImages();"
+              >
+              <img src="./img/a.png" width="50px" class="rotate-90"></input>
+            </div>
+
+            <div class="mb-4">
+              <input
+                class="form-check-input mt-3" id="licoOP" name="exampleRadios" value="option2" type="checkbox"
+                onchange="toggleImages();"
+              ><img src="./img/a.png" width="50px" class="rotate90"></input>
+            </div>
+          </div>
+          <div>
+            <div class="mb-4">
+              <input
+                class="form-check-input mt-3" id="licoON" name="exampleRadios" value="option2" type="checkbox"
+                onchange="toggleImages();"
+              ><img src="./img/a.png" width="50px" class="rotate180"></input>
+            </div>
+
+            <div class="mb-4">
+              <input
+                class="form-check-input mt-3" id="licoOV" name="exampleRadios" value="option2" type="checkbox"
+                onchange="toggleImages();"
+              ><img src="./img/a.png" width="50px"></input>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
 <script>
 
 
-var shown = 1;
+var shown = 1
 
-function toggleImages() {
+function toggleImages () {
+  let a1 = document.getElementById('licoL')
+  let a2 = document.getElementById('licoP')
+  let a3 = document.getElementById('licoN')
+  let a4 = document.getElementById('licoV')
+  let a5 = document.getElementById('licoOL')
+  let a6 = document.getElementById('licoOP')
+  let a7 = document.getElementById('licoON')
+  let a8 = document.getElementById('licoOV')
 
-    if (document.getElementById('niz').checked) {
-        if (document.getElementById('niz').checked) {
-            showImage(2);
-        } else {
-            showImage(2);
-        }
-    } else {
-        showImage(1);
-
-    }
+  if (a1.checked) {
+    showImage(10)
+    a2.disabled = true
+    a3.disabled = true
+    a4.disabled = true
+    a5.disabled = false
+    a6.disabled = false
+    a7.disabled = false
+    a8.disabled = false
+  } else {
+    showImage(1)
+    a1.disabled = false
+    a2.disabled = false
+    a3.disabled = false
+    a4.disabled = false
+    a5.disabled = false
+    a6.disabled = false
+    a7.disabled = false
+    a8.disabled = false
+  }
+  if (a2.checked) {
+    showImage(20)
+    a1.disabled = true
+    a3.disabled = true
+    a4.disabled = true
+  }
+  if (a3.checked) {
+    showImage(30)
+    a1.disabled = true
+    a2.disabled = true
+    a4.disabled = true
+  }
+  if (a4.checked) {
+    showImage(40)
+    a1.disabled = true
+    a2.disabled = true
+    a3.disabled = true
+  }
+  if (a5.checked) {
+    showImage(50)
+    a6.disabled = true
+    a7.disabled = true
+    a8.disabled = true
+  }
+  if (a6.checked) {
+    showImage(60)
+    a5.disabled = true
+    a7.disabled = true
+    a8.disabled = true
+  }
+  if (a7.checked) {
+    showImage(70)
+    a5.disabled = true
+    a6.disabled = true
+    a8.disabled = true
+  }
+  if (a8.checked) {
+    showImage(80)
+    a5.disabled = true
+    a6.disabled = true
+    a7.disabled = true
+  }
+  if (a1.checked && a5.checked) {
+    showImage(15)
+  }
+  if (a1.checked && a6.checked) {
+    showImage(16)
+  }
+  if (a1.checked && a7.checked) {
+    showImage(17)
+  }
+  if (a1.checked && a8.checked) {
+    showImage(18)
+  }
+  if (a2.checked && a5.checked) {
+    showImage(25)
+  }
+  if (a2.checked && a6.checked) {
+    showImage(26)
+  }
+  if (a2.checked && a7.checked) {
+    showImage(27)
+  }
+  if (a2.checked && a8.checked) {
+    showImage(28)
+  }
+  if (a3.checked && a5.checked) {
+    showImage(35)
+  }
+  if (a3.checked && a6.checked) {
+    showImage(36)
+  }
+  if (a3.checked && a7.checked) {
+    showImage(37)
+  }
+  if (a3.checked && a8.checked) {
+    showImage(38)
+  }
+  if (a4.checked && a5.checked) {
+    showImage(45)
+  }
+  if (a4.checked && a6.checked) {
+    showImage(46)
+  }
+  if (a4.checked && a7.checked) {
+    showImage(47)
+  }
+  if (a4.checked && a8.checked) {
+    showImage(48)
+  }
 }
 
-function showImage(n) {
-    console.log(document.getElementById(n));
-    document.getElementById(shown).style.display = 'none';
-    document.getElementById(n).style.display = 'block';
-    shown = n
+function showImage (n) {
+  console.log(document.getElementById(n))
+  document.getElementById(shown).style.display = 'none'
+  document.getElementById(n).style.display = 'block'
+  shown = n
 
 }
-
 </script>
 
 
